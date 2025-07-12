@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <meta name="description" content="A weather app that provides real-time weather updates based on city input.">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="Icon" href="asset/logow.png">
+</head>
+<body>
+    <div class="weather-container">
+        <!-- Input Field for City -->
+        <div class="input-field">
+            <input type="text" placeholder="Enter The City..." class="search">
+            <button class="searchbtn">
+                <ion-icon name="search"></ion-icon>
+            </button>
+        </div>
+        <p id="error">City Not Found</p>
+
+        <!-- Country Display -->
+        <div class="country">
+            <h2 id="counth2"></h2>
+        </div> 
+
+        <!-- Weather Information -->
+        <div id="weathertype">
+            <div class="weather-mode">
+                <img src="./asset/cloud.png" class="weatherimg" alt="Weather Icon" width="200px">
+                <h1 class="temp">0°<span>C</span></h1>
+                <div class="cityimg">
+                    <img src="asset/location.png" width="40px" alt="Location Icon">
+                    <h2 class="city">Invalid</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Humidity and Wind Information -->
+        <div class="hum-win">
+            <div class="humidity">
+                <img src="asset/humidity.png" width="37px" alt="Humidity Icon">
+                <h3 class="hum">0%</h3>
+                <p>Humidity</p>
+            </div>
+            <div class="wind">
+                <img src="asset/wind.png" width="40px" alt="Wind Icon">
+                <h3 class="win">00.00km/h</h3>
+                <p>Wind</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="weather.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
